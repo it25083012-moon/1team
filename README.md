@@ -12,3 +12,64 @@
 1週間単位で課題をクリアしていく流れが、メインページのロードマップで見えるようになっています。
 
 
+# tiny-slugify
+
+https://edogawa.shuregakuen.ed.jp/school/
+https://npo-lh.com/activities/free-school/
+
+## 特長
+
+
+
+## 動作環境
+
+| 項目 | バージョン |
+| --- | --- |
+| HTML |
+| CSS |
+| PHP |
+| CSS |
+| CSS |
+| CSS |
+
+## インストール
+
+```bash
+npm install tiny-slugify
+```
+
+## 使い方
+
+```js
+import { slugify } from "tiny-slugify";
+
+console.log(slugify("Hello World 2026"));
+// => "hello-world-2026"
+
+console.log(slugify("在庫 一覧", { separator: "_" }));
+// => "在庫_一覧"
+```
+
+## API
+
+### slugify(input, options?)
+
+| 引数 | 型 | 既定値 | 説明 |
+| --- | --- | --- | --- |
+| `input` | `string` | （必須） | 変換する文字列 |
+| `options.separator` | `string` | `"-"` | 単語の区切り文字 |
+| `options.maxLength` | `number` | `80` | 最大文字数。超えた分は切り捨てます |
+
+戻り値は `string` です。`input` が文字列でないときは `TypeError` を投げます。
+
+## 変更履歴
+
+[CHANGELOG.md](CHANGELOG.md) を参照してください。
+
+## コントリビュート
+
+不具合報告や改善提案は Issue でお知らせください。開発の始め方は [CONTRIBUTING.md](CONTRIBUTING.md) にまとめています。
+
+## ライセンス
+
+[MIT](LICENSE)
