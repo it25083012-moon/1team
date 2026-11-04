@@ -60,3 +60,24 @@ cd pixel-ibasho-project
 
 # ローカルサーバーの起動（例: Pythonを使用する場合）
 python -m http.server 8000
+
+## 📁 フォルダ構成（予定）
+
+```text
+pixel-ibasho-project/
+│
+├── index.html          # アプリのメイン画面（入口）
+├── README.md           # この説明書ファイル
+│
+├── css/                # デザイン（スタイルシート）を置く場所
+│   └── style.css
+│
+├── js/                 # 動きやAI連携、Firebaseの処理を置く場所
+│   ├── main.js         # 全体の制御
+│   ├── canvas.js       # ドット絵キャンバスの処理
+│   └── firebase.js     # データベース・ログインの処理
+│
+└── assets/             # ドット絵の画像や音などの素材を置く場所
+    └── images/
+```
+
